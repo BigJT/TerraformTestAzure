@@ -1,9 +1,9 @@
 terraform {
-  backend "azurerm" {
+    backend "azurerm" {
     resource_group_name  = "jonnychipz-infra"
-    storage_account_name = "jonnychipztstate"
+    storage_account_name = "jtrchipztstate"
     container_name       = "tstate"
-    key                  = "77Q4LUB5o9wRdbPYDt+0kGZP+L8Sj9E/FNXg7lZBQS5z3mLod5cyan4wA19CR1SmlqIRUFQfhuQrPVaGzNhjGw=="
+    key                  = "uvsMJm9DZnkFnhUjULJipcAfMOiqqu/HW96ilHG1an8Ut61S6vA2PggYSQgy+WqjFiq4URUi/PB/Y3yVSPMRgA=="
   }
 
   required_providers {
@@ -14,6 +14,7 @@ terraform {
     }
   }
 }
+
 provider "azurerm" {
   features {
     key_vault {
